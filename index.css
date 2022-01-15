@@ -6,3 +6,7 @@ body {
   font-family: "Lobster Two", cursive;
   font-family: "Mulish", sans-serif;
 }
+.form{
+  background-image: url("./images/pizza1.jpg");
+  background-repeat: no-repeat;
+}
