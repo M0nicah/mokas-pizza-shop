@@ -5,6 +5,8 @@ $(document).ready(() => {
   orderButton.click(function () {
     page.scrollIntoView();
   });
+  // delivery fee
+  const delivery = 300;
 
   // pizza size and price
   const sizes = { small: 700, medium: 900, large: 1200 };
@@ -19,9 +21,9 @@ $(document).ready(() => {
   // const order = document.getElementById("place-order");
 
   // Click listeners
-  document.getElementById("place-order").addEventListener("click", (function () {
+  document.getElementById("place-order").addEventListener("click", function () {
     modal.style.display = "none";
-  }));
+  });
 
   checkout.click(function () {
     // Option values
@@ -45,11 +47,13 @@ $(document).ready(() => {
     ).innerHTML = `Topping: ${toppings[topping]}`;
     document.getElementById("crust-type").innerHTML = `Crust: ${crusts[crust]}`;
     document.getElementById("pizza-size").innerHTML = `Size: ${sizes[size]}`;
+    document.getElementById("delivery").innerHTML = `Delivery Fee: ${delivery}`;
     document.getElementById(
       "pizza-quantity"
     ).innerHTML = `Quantity: ${quantity}`;
+
     document.getElementById("total").innerHTML = `Total: ${
-      (toppings[topping] + crusts[crust] + sizes[size]) * quantity
+      (toppings[topping] + crusts[crust] + sizes[size] + delivery) * quantity
     }`;
   });
 });
