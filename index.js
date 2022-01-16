@@ -39,8 +39,13 @@ document.getElementById("checkout-btn").addEventListener("click", function () {
   const crust = document.getElementById("crust").value;
   const size = document.getElementById("size").value;
   const quantity = document.getElementById("quantity").value;
-  console.log(crust);
+  console.log();
+  if (toppings == "Select Topping") alert("Topping Required");
+  else if (crust == "Select Crust") alert("Crust Required");
+  else if (size == "Select Size") alert("Size Required");
+  else if (quantity == "Enter Number") alert("Number Required");
+
+  
 });
-if (toppings == "Select Topping") alert("Topping Required");
 
 // || crust == "select crust" || size == "select size" || quantity == "enter number" ) alert("Please select")
