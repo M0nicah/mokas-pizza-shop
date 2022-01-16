@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moka Pizza Shop Sign up</title>
+    <title>Moka Pizza Shop</title>
     <link href="./index.css" rel="stylesheet" />
     <link href="./css/tailwind.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -45,26 +45,26 @@
           >
           <h1 class="items-start text-xl font-bold flex text-yellow-600">You are almost there!</h1>
           <div class="">
-            <form class="items-start justify-center">
+            <form class="items-start justify-center" autocomplete="off">
               <label for="toppings" class="block font-medium items-center mt-5">Topping:</label>
               <select id="toppings" class="w-80 p-2 rounded-xl flex flex-col mx-auto ml-2 bg-gray-200 mt-2" required>
                 <option value="Select Topping" selected disabled>Select Topping</option>
-                <option value="extra cheese">Extra Cheese</option>
+                <option value="extraCheese">Extra Cheese</option>
                 <option value="peperoni">Peperoni</option>
                 <option value="pineapple">Pineapple</option>
               </select>
               <label for="crust" class="block font-medium items-center mt-5">Crust:</label>
               <select id="crust" class="w-80 p-2 rounded-xl mx-auto ml-2 bg-gray-200 mt-2" required>
                 <option value="Select Crust" selected disabled>Select Crust</option>
-                <option value="Gluten-free">Gluten-free</option>
-                <option value="Stuffed">Stuffed</option>
-                <option value="Crispy">Crispy</option>
+                <option value="glutenFree">Gluten free</option>
+                <option value="stuffed">Stuffed</option>
+                <option value="crispy">Crispy</option>
               </select>
               <label for="size" class="block font-medium items-center mt-5"> Size:</label>
               <select id="size" class="w-80 p-2 rounded-xl mx-auto ml-2 bg-gray-200 mt-2 " required>
                 <option value="Select Size" selected disabled>Select size</option>
-                <option value="Small">Small</option>
-                <option value="Medium">Medium</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
                 <option value="large">Large</option>
               </select>
               <label for="quantity" class="block font-medium items-center mt-5"> Quantity:</label>
@@ -106,13 +106,20 @@
               </p>
             </div>
             <!--card that shows order details and total price for the order-->
-            <div class="bg-yellow-200 p-5 w-48 h-48 flex mx-auto justify-center rounded-xl">
+            <div class="bg-yellow-200 p-5 w-48 h-48 flex flex-col items-start mx-auto font-bold italic text-sm justify-center rounded-xl">
+              <p id="topping"></p>
+              <p id="crust-type"></p>
+              <p id="pizza-size"></p>
+              <p id="pizza-quantity"></p>
+              <p id="total" class="font-extrabold text-lg"></p>
+              
             
             </div>
             <div class="items-center px-4 py-3">
               <button
                 id="place-order"
                 class="px-4 py-2 bg-yellow-500 text-white text-base font-medium rounded-md w-full shadow-sm hover:bg-yellow-600 focus:outline-none focus:ring-2 focus:ring-yellow-300"
+                
                 >
               Order Now
               </button>
