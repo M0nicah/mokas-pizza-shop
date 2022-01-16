@@ -1,8 +1,8 @@
 const page = document.getElementById("menu-page");
 document.getElementById("order-btn").addEventListener("click", function () {
-    console.log("hi");
-    page.scrollIntoView();
-  });
+  console.log("hi");
+  page.scrollIntoView();
+});
 // pizza size and price
 const sizes = { small: 700, medium: 900, large: 1200 };
 
