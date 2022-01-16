@@ -23,6 +23,7 @@ $(document).ready(() => {
   // Click listeners
   document.getElementById("place-order").addEventListener("click", function () {
     modal.style.display = "none";
+    alert("Order request successful!");
   });
 
   checkout.click(function () {
@@ -54,6 +55,7 @@ $(document).ready(() => {
 
     document.getElementById("total").innerHTML = `Total: ${
       (toppings[topping] + crusts[crust] + sizes[size] + delivery) * quantity
+
     }`;
   });
 });
