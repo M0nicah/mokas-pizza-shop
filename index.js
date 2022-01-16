@@ -48,4 +48,3 @@ document.getElementById("checkout-btn").addEventListener("click", function () {
   
 });
 
-// || crust == "select crust" || size == "select size" || quantity == "enter number" ) alert("Please select")
