@@ -8,15 +8,8 @@
     <link href="./index.css" rel="stylesheet" />
     <link href="./css/tailwind.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="./index.js" />
 
-    <!--google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Mulish&display=swap"
-      rel="stylesheet"
-    />
+    <!--AOS ANIMATION-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function ($) {
@@ -154,49 +147,100 @@
     </section> -->
     <!--SIGN UP FORM ENDS HERE-->
     <!--PIZZA  CARD SECTION(MENU)-->
-    <section class="bg-gray-900 w-full mx-auto">
+    <section class="bg-gray-300 w-full mx-auto mb-10">
       <div class="flex items-center justify-center min-h-screen">
-        <div class="grid grid-cols-1 xl:grid-cols-4 md:grid-cols-2 gap-5 ">
+        <div class="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-2 gap-8">
+          <!--CARD-1-->
           <div>
-            <div class="bg-gray-100 flex flex-col shadow-md rounded w-full h-96">
-              <img src="./images/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg" class="w-full h-60">
-            </div>
-            <div class="flex flex-col items-start text-left leading-6 tracking-wide">
-              <h5 class="text-black">Americano Pizza</h5>
-
+            <div
+              class="bg-gray-100 flex flex-col shadow-2xl rounded-2xl w-full h-full"
+            >
+              <img
+                src="./images/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg"
+                class="w-full h-60 rounded-t-2xl"
+              />
+              <div class="flex flex-col p-3 text-xl">
+                <h5 class="font-bold uppercase">Vegan Pizza</h5>
+                <div class=" mt-3 bg-yellow-100 rounded-xl p-2 text-base leading-loose font-medium italic text-red-600">
+                  <p>Small ...<span class="text-black font-bold">.....................................Ksh 700</span></p>
+                  <p>Medium ... <span class="text-black font-bold">...............................Ksh 900</span></p>
+                  <p class="">Large ... <span class="text-black font-bold">....................................Ksh 1200</span></p>
+                </div>
+                <div class="flex flex-col mx-auto justify-center items-center">
+                  <a class="mt-8"
+                  ><button
+                    class="bg-yellow-500 text-base p-2 w-48 text-center justify-center rounded-2xl text-white font-bold"
+                    id="buy-btn"
+                  >
+                    Buy Now
+                  </button></a
+                >
+                </div>
+              </div>
             </div>
           </div>
+          <!--CARD-2-->
           <div>
-            <div class="bg-gray-100 flex-col flex shadow-md rounded w-full h-96">
-              <img src="./images/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg" class="w-full h-60 ">
-            </div>
-            <div class="flex flex-col items-start leading-6 tracking-wide">
-              <h5 class="font-normal">Americano Pizza</h5>
-
+            <div
+              class="bg-gray-100 flex-col flex shadow-2xl rounded-2xl w-full h-full"
+            >
+              <img
+                src="./images/shourav-sheikh-a66sGfOnnqQ-unsplash.jpg"
+                class="w-full h-60 rounded-t-2xl"
+              />
+              <div class="flex flex-col items-start p-3 text-xl">
+                <h1 class="font-bold uppercase">Americano Pizza</h1>
+                <p></p>
+                <div class="mt-3 bg-yellow-100 p-2 rounded-xl text-base leading-loose font-medium italic text-red-600">
+                  <p>Small ...<span class="text-black font-bold">....................................Ksh 750</span></p>
+                  <p>Medium ...<span class="text-black font-bold">................................Ksh 950</span></p>
+                  <p>Large ...<span class="text-black font-bold">....................................Ksh 1250</span></p>
+                </div>
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <a class="mt-8"
+                  ><button
+                    class="bg-yellow-500 text-base p-2 w-48 text-center justify-center rounded-2xl text-white font-bold"
+                    id="buy-btn"
+                  >
+                    Buy Now
+                  </button></a
+                >
+                </div>
+              </div>
             </div>
           </div>
+          <!--CARD-3-->
           <div>
-            <div class="bg-gray-100 flex flex-col shadow-md rounded w-full h-96">
-              <img src="./images/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg" class="w-full h-60 ">
-            </div>
-            <div class="flex flex-col items-start  text-xl">
-              <h5 class="font-normal text-black">Americano Pizza</h5>
-
-            </div>
-          </div>
-          <div>
-            <div class="bg-gray-100  flex flex-col shadow-md rounded w-full h-96 mb-5">
-              <img src="./images/vitalii-chernopyskyi-Oxb84ENcFfU-unsplash.jpg" class="w-full h-60 ">
-            </div>
-            <div class="flex flex-col items-start leading-6 tracking-wide text-black">
-              <h5 class="font-normal">Americano Pizza</h5>
-
+            <div
+              class="bg-gray-100 flex-col flex shadow-2xl rounded-2xl w-full h-full"
+            >
+              <img
+                src="./images/ivan-torres-MQUqbmszGGM-unsplash.jpg"
+                class="w-full h-60 rounded-t-2xl"
+              />
+              <div class="flex flex-col items-start p-3 text-xl">
+                <h1 class="font-bold uppercase">Marinara Pizza</h1>
+                <p></p>
+                <div class="mt-3 bg-yellow-100 rounded-xl p-2 text-base leading-loose font-medium italic text-red-600">
+                  <p>Small ...<span class="text-black font-bold">....................................Ksh 700</span></p>
+                  <p>Medium ...<span class="text-black font-bold">................................Ksh 870</span></p>
+                  <p>Large ...<span class="text-black font-bold">....................................Ksh 1200</span></p>
+                </div>
+                <div class="flex flex-col justify-center items-center mx-auto">
+                  <a class="mt-8"
+                  ><button
+                    class="bg-yellow-500 text-base p-2 w-48 text-center justify-center rounded-2xl text-white font-bold"
+                    id="buy-btn"
+                  >
+                    Buy Now
+                  </button></a
+                >
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-
     </section>
   </body>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
