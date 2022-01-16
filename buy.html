@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moka Pizza Shop Sign up</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./css/tailwind.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Mulish&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function ($) {
+        $(function () {
+          AOS.init();
+        });
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!--TAILWIND CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+  </style>
+  <body>
+    <section id="buy-section" class="bg-yellow-50 w-screen h-screen">
+      <div class="w-full h-screen">
+        <div class="text-white text-4xl items-start p-6 leading-loose">
+          <h1>Place Order here!</h1>
+        </div>
+        <div
+          class="bg-white p-5 w-96  rounded-2xl shadow-xl items-start justify-center mx-auto"
+        >
+          <h1 class="items-start text-xl font-bold flex text-yellow-600">You are almost there!</h1>
+          <div class="">
+            <form class="items-start justify-center">
+              <label for="toppings" class="block font-medium items-center mt-5">Topping:</label>
+              <select id="toppings" class="w-80 p-2 rounded-xl flex flex-col mx-auto ml-2 bg-gray-200 mt-2" required>
+                <option value="Select Topping" selected disabled>Select Topping</option>
+                <option value="extra cheese">Extra Cheese</option>
+                <option value="peperoni">Peperoni</option>
+                <option value="pineapple">Pineapple</option>
+              </select>
+              <label for="crust" class="block font-medium items-center mt-5">Crust:</label>
+              <select id="toppings" class="w-80 p-2 rounded-xl mx-auto ml-2 bg-gray-200 mt-2" required>
+                <option value="Select Crust" selected disabled>Select Crust</option>
+                <option value="Gluten-free">Gluten-free</option>
+                <option value="Stuffed">Stuffed</option>
+                <option value="Crispy">Crispy</option>
+              </select>
+              <label for="toppings" class="block font-medium items-center mt-5"> Size:</label>
+              <select id="toppings" class="w-80 p-2 rounded-xl mx-auto ml-2 bg-gray-200 mt-2 " required>
+                <option value="Select Size" selected disabled>Select size</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="large">Large</option>
+              </select>
+              <label for="toppings" class="block font-medium items-center mt-5"> Quantity:</label>
+              <input id="quantity" type="number" class="w-80 p-2 rounded-xl mx-auto ml-2 bg-gray-200 mt-2 " placeholder="Enter Number" required>
+                
+              
+            </form>
+            <div class="flex flex-col items-center justify-center mx-auto mt-5">
+              <button class="bg-yellow-500 text-white font-bold text-base p-3 w-48 rounded-2xl text-center items-center justify-center flex flex-col mx-auto">Place Order</button>
+              
+            </div>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
