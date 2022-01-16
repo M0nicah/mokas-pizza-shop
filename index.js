@@ -1,5 +1,5 @@
 const page = document.getElementById("menu-page");
-page.document.getElementById("order-btn").addEventListener("click", function () {
+document.getElementById("order-btn").addEventListener("click", function () {
   console.log("hi");
   page.scrollIntoView();
 });
