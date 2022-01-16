@@ -35,7 +35,6 @@ checkout.addEventListener("click", function () {
   else {
     modal.style.display = "block";
   }
-
   // Displaying order details
   document.getElementById(
     "topping"
