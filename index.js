@@ -16,12 +16,12 @@ $(document).ready(() => {
   // Html elements
   const modal = document.getElementById("order-checkout");
   const checkout = $("#checkout-btn");
-  const order = $("#place-order");
+  // const order = document.getElementById("place-order");
 
   // Click listeners
-  order.click(function () {
+  document.getElementById("place-order").addEventListener("click", (function () {
     modal.style.display = "none";
-  });
+  }));
 
   checkout.click(function () {
     // Option values
